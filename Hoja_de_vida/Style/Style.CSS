@@ -1,0 +1,61 @@
+html{
+    border: 2px solid;
+    color: #505694;
+
+ 
+}
+
+li{
+    color: black;
+}
+.Foto_Reglon{
+    background-color: rgba(105, 113, 121, 0.39);
+
+}
+.Titulo{
+    background-color: #7e7f86;
+    color: aliceblue;
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.Subtitulo{
+    background-color: #7e7f86;
+    color: rgb(27, 28, 121);
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.Descripcion{
+    font-weight: 800;
+    font-style:italic
+}
+.primero{
+    font-weight: 800;
+    
+    
+}
+.nombre{
+    background-color: rgb(77, 77, 221);
+    color: beige;
+    text-align: center;
+}
+
+
+#Foto{
+    width:140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#Espacio{
+    height: 30px;
+}
+#icono{
+    height: 20px;
+    
+}
