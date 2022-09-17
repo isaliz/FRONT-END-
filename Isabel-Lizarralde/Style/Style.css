@@ -1,0 +1,704 @@
+  * {
+      margin: 0;
+  }
+body {
+    font-family: 'Be Vietnam','Be Vietnam Pro', sans-serif; 
+    font-size: 16px;
+    overflow-x: hidden;
+    
+}
+
+/* mobile se autoajusta a la ventana menor a 481px*/
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+    img#optionalstuff {
+        display: none;
+    }
+
+    p#optionalstuff {
+        display: none;
+    }
+
+h2{
+    margin-top: 10%;
+}
+
+    .header-site {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 45px 16px;
+        margin-bottom: 8px;
+    }
+
+    .list-nav {
+        background: #fff;
+        height: 45%;
+        margin: 0 6%;
+        padding: 0;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 20%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        list-style: none;
+        z-index: 10;
+        overflow: hidden;
+       
+    }
+    
+    .list-nav li {
+        padding: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .list-nav li:hover {
+        color: #babbc0;
+    }
+
+    .start {
+        display: none;
+    }
+
+    /* info */
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .graficas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .graficas img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .descripcion, .acerca{
+        padding: 26px;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+
+   .descripcion p, .acerca p, .card p {
+        font-size: 16px;
+        font-weight: 500;
+        color: #B9B9C1;
+        margin-top: 15px;
+        margin-left:25px;
+        margin-right: 20px;
+   }
+
+    .btn-uno {
+        background-color: #8B48BF;
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        padding: 1em 3.4em;
+        margin: 14px 0 20px 0;
+        color: #fff;
+        cursor: pointer
+    }
+
+    .btn-uno:hover {
+        background-color: #d633ce;
+    }
+
+    .btn-dos {
+        background-color: #fff;
+        color: #8B48BF;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        border-radius: 20px;
+        padding: 1em 3.4em;
+        margin: 14px 0 20px 0;
+        font-weight: 600;
+        font-family: "Be Vietnam";
+    }
+
+    .btn-dos:hover {
+        color: #d633ce;
+    }
+
+    .header-card {
+        display: flex;
+        align-items: center;
+        background-color: #DCC8EC;
+        margin-left: 15px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-sizing: border-box;
+        margin-top: 30px;
+    }
+
+    .header-card  span {
+        padding: .5rem 1.5rem;
+        color: #fff;
+        background-color: #5b00a0;
+        border-radius: 20px;
+        margin-right: 12px;
+        border-top-left-radius: 20px;
+    }
+
+    /* testimonio */
+    .comentarios center {
+        margin-bottom: 125px;
+    }
+
+    .card-comentarios {
+        background-color: #fafafa;
+        margin: 40px 20px 20px 20px;
+        text-align: center;
+        position: relative;
+        height: 219px;
+    }
+    .card-imagen {
+        position: relative;
+        top: -36px; 
+        left: 4%;   
+    }
+   
+    .card-imagen figure{
+        display:inline-flex;    
+      }
+ .card-imagen figure img  {
+        position: relative;
+          width: 70px;
+          height: 70px;
+          margin: 0px 100px 200px 10px;
+          margin-left:29%;
+      }
+     .card-titulo p{
+        position: absolute;
+        top:15%;
+        left: 47%;
+        color: black;
+        font-weight: bold;       
+    }
+ 
+   
+    .card-descripcion p {
+        position: absolute;
+        top:15%;
+        color: #B9B9C1;
+        width: 360px;
+        margin: 55px 20px 20px 40px;
+
+    }
+  
+
+    .options {
+        display: flex;
+        justify-content: center;
+    }
+
+ /* footer morado */   
+
+    .end {
+        background-color:#8B48BF;
+        color: #fff;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 15px;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .end h1 {
+        font-size: 40px;
+    }
+
+    /* Footer Oscuro*/
+
+    .footer {
+        background-color: #1e1e26;
+
+    }
+
+
+
+    .registro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        padding: 3rem 1rem;
+    }
+
+    .registro input {
+        padding: 1em 3.8em;
+        border-radius: 22px;
+        outline: 0;
+        margin: .3em;
+        border: none;
+        text-align: left;
+    }
+    
+    .registro button {
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        outline: 0;
+        border-radius: 22px;
+        padding: 0.8em 2.45em;
+        color: #fff;
+        background-color: #8B48BF;
+    }
+
+    footer .contenedor-footer {
+        height: 430px;
+            }
+
+ 
+    .list-footer {
+        margin: 1em 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 14fr;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 8px 84px;
+        font-size: 14px;
+    }
+    
+    .list-footer li a {
+        color: #e1e2e7;
+        text-decoration: none;
+    }
+
+    .list-footer li a:hover {
+        color:#8B48BF;
+    }
+
+    .social-media {
+        margin: 35px 0px 0px 0px;
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .social-media a img {
+       height: auto    
+    }
+
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 22px;
+    }
+    .copyright {
+        text-align: center;
+        color: #95959f;
+        font-size: 14px;
+    }
+    
+}
+
+
+/* desktop se auto ajusta a la ventana mayor a 481px*/
+
+@media only screen and (min-width: 481px) {
+
+    .header-site {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 45px 16px;
+        margin-bottom: 8px;
+    }
+
+    .list-nav {
+        background: #fff;
+        height: 45%;
+        margin: 0 6%;
+        padding: 0;
+         align-items: center;
+        position: fixed;
+        top: 20%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        list-style: none;
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background: none;
+        justify-content: space-evenly;
+        font-size: 12px;
+        
+    }
+    
+    .list-nav li {
+        padding: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .list-nav li:hover {
+        color: #babbc0;
+    }
+
+    .header-site {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 30px 50px;
+        align-items: center;
+    }
+
+    section {
+        margin: 45px 70px;
+    }
+
+    #btn-menu {
+        display: none;
+    }
+
+    .start {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .btn-uno {
+        background-color: #8B48BF;
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        padding: 1em 3.4em;
+        margin: 14px 0 20px 0;
+        color: #fff;
+        cursor: pointer
+    }
+
+    .btn-uno:hover {
+        background-color: #d633ce;
+    }
+
+    .btn-dos {
+        background-color: #fff;
+        color: #8B48BF;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        border-radius: 20px;
+        padding: 1em 3.4em;
+        margin: 14px 0 20px 0;
+        font-weight: 600;
+        font-family: "Be Vietnam";
+    }
+
+    .btn-dos:hover {
+        color: #d633ce;
+    }
+
+
+    .articulo-presentacion {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+
+    .descripcion {
+ 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0;
+    }
+    
+
+    .descripcion h1 {
+        width: 440px;
+        font-size: 48px;
+        color: #242e51;
+        margin-bottom: 15px;
+        line-height: 1.2;
+        margin-left: -45%;
+        margin-top: 25%;
+    }
+    
+    .descripcion p {
+        width: 335px;
+        position: relative;
+        font-size: 16px;
+        color: black;
+      margin-left: -45%;
+   }
+
+   
+   .descripcion button {
+    margin-top: 5%;
+    margin-left: -45%;
+}
+
+
+.desktop {
+
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 44% 49%;
+    grid-gap: 19px 1px;
+    margin-top: 5%;
+}
+
+
+.acerca h1,h2 {
+    font-size: 36px;
+    margin-left: -3%;
+    color: #242e51;
+}
+
+
+
+.acerca p {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    margin-top: 15px;
+    margin-left:-20px;
+    margin-right: 20px;
+    width: 330px;
+}
+
+.card p {
+    width: 440px;
+    padding: 26px;
+    margin-left: 65px;        
+    text-align: initial;
+    color: #B9B9C1;
+}
+
+.header-card {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.header-card  span {
+    padding: .5rem 1.5rem;
+    color: #fff;
+    background-color: #5b00a0;
+    border-radius: 20px;
+    margin-right: 12px;
+    border-top-left-radius: 20px;
+}
+
+.comentarios center {
+    margin-bottom: 125px;
+}
+.card-comentarios {
+    background-color: #fafafa;
+    margin: 40px 10px 20px 0px;
+    text-align: center;
+    position: relative;
+    height: 219px;
+
+}
+
+.card-imagen figure{
+    display:inline-flex;    
+  }
+  
+  .card-imagen figure img  {
+    position: relative;
+      width: 70px;
+      height: 70px;
+      margin: -35px 255px 20px 0px;
+      margin-left:6.5%;
+    
+  }
+
+
+
+  .card-titulo  {
+    position:absolute;
+    top: 20%; 
+    left: 1%;
+    color: black; 
+    display:flex;    
+    
+ }
+
+ .card-titulo p{
+    color: black;
+    margin-inline: 79%;
+    font-weight: bold;   
+}
+
+.card-descripcion  {
+    position:absolute;
+    color: black;
+     top: 35%; 
+    display: flex;
+}
+
+.card-descripcion p {
+    color: #B9B9C1;
+    width: 340px;
+    margin: 28px; 
+
+}
+
+/* end section */
+.end {
+    background-color:#8B48BF;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 50px 15px;
+    text-align: left;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 170px;
+}
+
+.end h1 {
+    font-size: 40px;
+    width: 570px;
+}
+
+/* footer section*/
+
+.footer {
+    background-color: #1e1e26;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-footer {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+    grid-template-areas: "manage nav form" 
+                          "social-media nav copy" ;
+    justify-content: center;
+    align-items: center;
+}
+
+.registro {
+    grid-area: form;
+}
+
+.list-footer {
+    grid-area: nav;
+    padding: 70px;
+}
+
+.copyright {
+    grid-area: copy;
+}
+
+.social-media {
+    grid-area: social-media;
+}
+
+.footer-logo {
+    grid-area: manage;
+}
+
+
+
+
+.registro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 3rem 1rem;
+}
+
+.registro input {
+    padding: 1em 3.8em;
+    border-radius: 22px;
+    outline: 0;
+    margin: .3em;
+    border: none;
+    text-align: left;
+}
+
+.registro button {
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    outline: 0;
+    border-radius: 22px;
+    padding: 0.8em 2.45em;
+    color: #fff;
+    background-color: #8B48BF;
+}
+
+  .list-footer {
+    margin: 1em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 8px 84px;
+    font-size: 14px;
+}
+
+.list-footer li a {
+    color: #e1e2e7;
+    text-decoration: none;
+}
+
+.list-footer li a:hover {
+    color:#8B48BF;
+}
+.social-media {
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.social-media a img {
+    width: 110%;
+    height: auto    
+}
+
+footer .contenedor-footer {
+    height: auto;
+        }
+
+
+        .copyright {
+            text-align: center;
+            color: #95959f;
+            font-size: 14px;
+            padding: 25px 0;
+        }
+
+        .footer-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+}
